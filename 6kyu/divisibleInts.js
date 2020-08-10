@@ -1,3 +1,5 @@
+//https://www.codewars.com/kata/566859a83557837d9700001a
+
 //solution 2
 
 function getCount(n){
