@@ -3,6 +3,12 @@
 // solution 1
 
 function meeting(s) {
+    return s.toUpperCase().split(';').map(name=> `(${name.split(':')[1]}, ${name.split(':')[0]})`).sort().join('')
+}
+
+// solution 2
+
+function meeting(s) {
     let a = s.toUpperCase().split(';').map(name=>{ 
                                           name=name.split(':')
                                           return `(${name[1]}, ${name[0]})`})
@@ -10,7 +16,7 @@ function meeting(s) {
     return a.sort().join('')
 }
 
-// solution 2
+// solution 3
 
 function meeting(s) {
     let b = ''
