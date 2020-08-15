@@ -1,6 +1,13 @@
 // https://www.codewars.com/kata/5727bb0fe81185ae62000ae3
 
-//solution 1
+//solution1
+function cleanString(s) {
+    let result = []
+    s.split('').map(char => char == '#' ? result.pop() : result.push(char))
+    return result.join('')
+  };
+
+//solution 2
 function cleanString(s) {
     let result = []
     for (const char of s){
@@ -14,7 +21,7 @@ function cleanString(s) {
     return result.join('')
   };
 
-//solution 2
+//solution 3
 function cleanString(s) {
     s=s.split('')
     for (let i=0;i<s.length;i++){
